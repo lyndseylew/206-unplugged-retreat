@@ -106,6 +106,10 @@ textarea {
   }
 
 /* HEADER STYLES */
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -113,30 +117,29 @@ header .content-wrapper {
   flex-flow: column nowrap;
 }
 
-header figure {
-
-}
-
 .header-divider {
-
+  width: 100%;
 }
 
 header nav {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 header nav ul {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: column nowrap;
 }
 
 /* FOOTER STYLES */
 
 footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,12 +159,19 @@ footer .social {
 
 footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
+footer p {
+  margin: 0;
+}
 
 /* -------------------- Base Mobile Styles - Homepage -------------------- */
+
+.content-wrapper {
+  width: 83%;
+}
 
 /* HERO AREA STYLES */
 
@@ -199,11 +209,23 @@ aside .form {
   flex-flow: column nowrap;
 }
 
-.features .feature-items {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+}
+
+.features article {
+  width: 55%;
+}
+
+.features .fontawesome-icon {
+  padding: 50px;
+}
+
+.features p {
+  margin: 0;
 }
 
 /* REVIEWS STYLES */
@@ -213,6 +235,10 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+}
+
+.reviews h3 {
+  margin: 0;
 }
 
 /* -------------------- Base Mobile Styles - About Page -------------------- */
