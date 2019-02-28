@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -97,20 +97,172 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* -------------------- Base Header - Footer Styles -------------------- */
+  header,
+  footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+/* HEADER STYLES */
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+header figure {
+
+}
+
+.header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+/* FOOTER STYLES */
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+footer .contact {
+
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
+/* -------------------- Base Mobile Styles - Homepage -------------------- */
 
+/* HERO AREA STYLES */
 
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* NEWSLETTER SIGNUP STYLES */
 
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
+aside .content-wrapper {
+}
 
+aside .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
+/* FEATURES STYLES */
 
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
+.features .feature-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
+/* REVIEWS STYLES */
 
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
+/* -------------------- Base Mobile Styles - About Page -------------------- */
+
+/* MISSION STYLES */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAP STYLES */
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTACT STYLES */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+/* -------------------- Base Mobile Styles - FAQ Page -------------------- */
+
+/* FAQ STYLES */
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq .question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 
  /* ==========================================================================
    Helper classes
@@ -192,7 +344,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -210,7 +362,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -286,5 +438,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
