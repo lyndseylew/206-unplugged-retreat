@@ -146,8 +146,11 @@ footer .content-wrapper {
   flex-flow: column nowrap;
 }
 
-footer .contact {
-
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
 footer .social {
@@ -165,6 +168,10 @@ footer .social-icons {
 
 footer p {
   margin: 0;
+}
+
+footer .copyright {
+  margin-top: 50px;
 }
 
 /* -------------------- Base Mobile Styles - Homepage -------------------- */
@@ -191,6 +198,10 @@ aside {
 }
 
 aside .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
 aside .form {
@@ -251,6 +262,13 @@ aside .form {
   align-items: center;
 }
 
+.mission .mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
 /* MAP STYLES */
 
 .map {
@@ -267,11 +285,15 @@ aside .form {
   align-items: center;
 }
 
-.contact-section .contact-details {
+.contact-section .contact-details-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+}
+
+.contact-section .contact-details {
+  flex-basis: 100%
 }
 
 /* -------------------- Base Mobile Styles - FAQ Page -------------------- */
@@ -283,7 +305,7 @@ aside .form {
   align-items: center;
 }
 
-.faq .question {
+.faq .faq-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,16 +399,101 @@ aside .form {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+   /* -------------------- Tablet Header - Footer Styles -------------------- */
+
+     /* HEADER STYLES */
+     header .content-wrapper {
+       flex-flow: row nowrap;
+     }
+
+     /* FOOTER STYLES */
+     footer .copyright {
+       margin-top: 100px;
+     }
+
+     footer .footer-content {
+       flex-flow: row nowrap;
+     }
+
+     /* NEWSLETTER SIGNUP STYLES */
+
+     aside .content-wrapper {
+       flex-flow: row nowrap;
+     }
+
+     /* REVIEWS STYLES */
+
+     .features .features-items {
+       flex-flow: row wrap;
+     }
+
+     .features article {
+       flex-basis: 25%;
+       margin: 0 12%;
+     }
+
+     /* REVIEWS STYLES */
+
+     .reviews article {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row nowrap;
+     }
+
+     .reviews .review-content {
+       flex-basis: 50%;
+     }
+
+     /* -------------------- Base Tablet Styles - About Page -------------------- */
+
+     /* MISSION STYLES */
+
+     .mission .mission-content {
+       justify-content: space-between;
+       flex-flow: row nowrap;
+       align-items: center;
+     }
+
+     .mission .mission-content p {
+       width: 45%;
+     }
+
+     /* CONTACT DETAILS STYLES */
+     .contact-section .contact-details-wrapper {
+       flex-flow: row wrap;
+     }
+
+     .contact-section .contact-details {
+       flex-basis: 50%
+     }
+
+
+     /* -------------------- Base Tablet Styles - FAQ Page -------------------- */
+
+     /* FAQ STYLES */
+
+     .faq h2 {
+       width: 100%;
+     }
+
+     .faq .faq-content {
+       justify-content: space-between;
+       flex-flow: row wrap;
+     }
+
+     .faq article {
+       flex-basis: 40%;
+     }
+
+
+   }
+
+   @media only screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+   }
 
 
 /* ==========================================================================
