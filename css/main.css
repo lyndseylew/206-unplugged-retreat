@@ -134,11 +134,11 @@ textarea {
    }
 
    img {
-
+     width: 100%;
    }
 
    figure {
-
+     margin: 0;
    }
 
    address {
@@ -166,6 +166,14 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .header-divider {
@@ -248,7 +256,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #202322;
+  background: url('../img/hero-image.jpg') center no-repeat #202322;
+  background-size: cover;
   color: #e2e3ed;
 }
 
@@ -312,7 +321,8 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  background-color: #202322;
+  background: url('../img/features-background.jpg') center no-repeat #202322;
+  background-size: cover;
   color: #e2e3ed;
 }
 
@@ -513,10 +523,13 @@ input[type=button] {
 
      /* HEADER STYLES */
 
-
      header .content-wrapper {
        flex-flow: row nowrap;
        justify-content: space-between;
+     }
+
+     header figure {
+       width: 30%;
      }
 
      header .header-divider {
@@ -586,7 +599,7 @@ input[type=button] {
        flex-flow: row nowrap;
      }
 
-     .reviews img {
+     .reviews figure {
        flex-basis: 50%;
      }
 
@@ -656,6 +669,10 @@ input[type=button] {
      }
 
      /* -------------------- Desktop Header - Footer Styles -------------------- */
+
+     header figure {
+       width: 24%;
+     }
 
      /* FOOTER STYLES */
      footer .footer-content {
