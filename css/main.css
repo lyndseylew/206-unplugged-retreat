@@ -149,9 +149,11 @@ textarea {
 /* -------------------- Base Header - Footer Styles -------------------- */
   header,
   footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202322;
+    color: #e2e3ed;
   }
 
 /* HEADER STYLES */
@@ -166,8 +168,9 @@ header .content-wrapper {
   flex-flow: column nowrap;
 }
 
-.header-divider {
+header .header-divider {
   width: 100%;
+  border-bottom: rgb(58,58,58) solid 1px;
 }
 
 header nav {
@@ -182,6 +185,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 
 header nav ul li {
@@ -192,7 +196,7 @@ header nav ul li {
 /* FOOTER STYLES */
 
 footer .content-wrapper {
-  width: 55%;
+  width: 60%;
   margin: 50px 0;
   display: flex;
   justify-content: center;
@@ -244,6 +248,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 /* NEWSLETTER SIGNUP STYLES */
@@ -253,6 +259,9 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  background-color: #527158;
+  color: #e2e3ed;
+  padding: 30px 0 55px 0;
 }
 
 aside .content-wrapper {
@@ -267,6 +276,33 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  width: 100%;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 15px;
+  color: #9d9ea4;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* FEATURES STYLES */
@@ -276,6 +312,8 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 .features .features-items {
@@ -305,6 +343,8 @@ aside .form {
   justify-content: space-between;
   align-items: center;
   flex-flow: column nowrap;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
 .reviews h3 {
@@ -319,6 +359,9 @@ aside .form {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  color: #e2e3ed;
+  padding: 50px 0;
 }
 
 .mission .mission-content {
@@ -342,12 +385,15 @@ aside .form {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2a423a;
+  color: #e2e3ed;
+  padding: 50px 0;
 }
 
 .contact-section .contact-details-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: column nowrap;
 }
 
@@ -362,6 +408,9 @@ aside .form {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  color: #e2e3ed;
+  padding: 50px 0;
 }
 
 .faq .faq-content {
@@ -463,9 +512,16 @@ aside .form {
    /* -------------------- Tablet Header - Footer Styles -------------------- */
 
      /* HEADER STYLES */
+
+
      header .content-wrapper {
        flex-flow: row nowrap;
+       justify-content: space-between;
      }
+
+     header .header-divider {
+       display: none;
+    }
 
      header nav {
        justify-content: flex-end;
@@ -493,6 +549,10 @@ aside .form {
 
      /* -------------------- Tablet Homepage Styles -------------------- */
 
+     .hero-area {
+       padding: 95px 0;
+     }
+
      /* NEWSLETTER SIGNUP STYLES */
 
      aside .content-wrapper {
@@ -500,6 +560,9 @@ aside .form {
      }
 
      /* FEATURES STYLES */
+     .features .content-wrapper {
+       padding: 95px 0;
+     }
 
      .features .features-items {
        flex-flow: row wrap;
@@ -512,6 +575,9 @@ aside .form {
      }
 
      /* REVIEWS STYLES */
+     .reviews .content-wrapper {
+       padding: 95px 0;
+     }
 
      .reviews article {
        display: flex;
@@ -532,6 +598,9 @@ aside .form {
      /* -------------------- Tablet Styles - About Page -------------------- */
 
      /* MISSION STYLES */
+     .mission .content-wrapper {
+       padding: 90px 0;
+     }
 
      .mission .mission-content {
        justify-content: space-between;
@@ -544,6 +613,10 @@ aside .form {
      }
 
      /* CONTACT DETAILS STYLES */
+     .contact-section .content-wrapper {
+       padding: 95px 0;
+     }
+
      .contact-section .contact-details-wrapper {
        flex-flow: row wrap;
      }
@@ -556,6 +629,9 @@ aside .form {
      /* -------------------- Tablet Styles - FAQ Page -------------------- */
 
      /* FAQ STYLES */
+     .faq .content-wrapper {
+       padding: 95px 0;
+     }
 
      .faq h2 {
        width: 100%;
