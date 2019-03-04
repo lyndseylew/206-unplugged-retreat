@@ -236,6 +236,14 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p {
+  font-size: 18px;
+  background-color: #487458;
+  border: solid #487458 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
 footer p {
   margin: 0;
 }
