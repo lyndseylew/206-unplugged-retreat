@@ -120,12 +120,14 @@ textarea {
 
    h2 {
      font-family: 'Poppins', sans-serif;
+     font-weight: 500;
      font-size: 1.875em;
    }
 
    h3,
    h4 {
      font-family: 'Poppins', sans-serif;
+     font-weight: 500;
      font-size: 1.125em;
    }
 
@@ -157,10 +159,6 @@ textarea {
   }
 
 /* HEADER STYLES */
-header {
-  padding: 15px 0;
-}
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -174,6 +172,7 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 10px 0;
 }
 
 header .header-divider {
@@ -193,6 +192,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 20px 0;
   padding: 0;
 }
 
@@ -263,10 +263,17 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: url('../img/hero-image.jpg') center no-repeat #202322;
   background-size: cover;
   color: #e2e3ed;
+  height: 500px;
+  padding: 30px 0 55px 0;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 /* NEWSLETTER SIGNUP STYLES */
@@ -290,7 +297,7 @@ aside .content-wrapper {
 
 aside .form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column nowrap;
   width: 100%;
@@ -332,6 +339,7 @@ input[type=button] {
   background: url('../img/features-background.jpg') center no-repeat #202322;
   background-size: cover;
   color: #e2e3ed;
+  padding: 30px 0 55px 0;
 }
 
 .features .features-items {
@@ -365,6 +373,7 @@ input[type=button] {
   flex-flow: column nowrap;
   background-color: #2a423a;
   color: #e2e3ed;
+  padding: 30px 0 55px 0;
 }
 
 .reviews h3 {
