@@ -205,7 +205,7 @@ header nav ul li {
 
 footer .content-wrapper {
   width: 60%;
-  margin: 50px 0;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,10 +301,6 @@ aside .form {
   align-items: center;
   flex-flow: column nowrap;
   width: 100%;
-}
-
-aside .form {
-  margin-top: 30px;
 }
 
 input[type=text] {
@@ -582,6 +578,7 @@ input[type=button] {
      /* FOOTER STYLES */
      footer .content-wrapper {
        width: 100%;
+       padding: 75px 0;
      }
 
      footer .footer-content {
@@ -601,7 +598,12 @@ input[type=button] {
      /* -------------------- Tablet Homepage Styles -------------------- */
 
      .hero-area {
-       padding: 95px 0;
+       height: 600px;
+       padding: 75px 0;
+     }
+
+     .hero-area h1 {
+       width: 60%;
      }
 
      /* NEWSLETTER SIGNUP STYLES */
@@ -610,8 +612,12 @@ input[type=button] {
        flex-flow: row nowrap;
      }
 
+     aside .form {
+       margin-left: 30px;
+     }
+
      /* FEATURES STYLES */
-     .features .content-wrapper {
+     .features {
        padding: 95px 0;
      }
 
@@ -626,7 +632,7 @@ input[type=button] {
      }
 
      /* REVIEWS STYLES */
-     .reviews .content-wrapper {
+     .reviews {
        padding: 95px 0;
      }
 
@@ -639,6 +645,7 @@ input[type=button] {
 
      .reviews figure {
        flex-basis: 50%;
+       padding-right: 10px;
      }
 
      .reviews .review-content {
@@ -649,8 +656,8 @@ input[type=button] {
      /* -------------------- Tablet Styles - About Page -------------------- */
 
      /* MISSION STYLES */
-     .mission .content-wrapper {
-       padding: 90px 0;
+     .mission {
+       padding: 70px 0;
      }
 
      .mission .mission-content {
@@ -660,7 +667,8 @@ input[type=button] {
      }
 
      .mission .mission-content p {
-       width: 45%;
+       width: 50%;
+       padding: 0 10px;
      }
 
      .map figure {
@@ -668,8 +676,8 @@ input[type=button] {
      }
 
      /* CONTACT DETAILS STYLES */
-     .contact-section .content-wrapper {
-       padding: 95px 0;
+     .contact-section {
+       padding: 75px 0;
      }
 
      .contact-section .contact-details-wrapper {
@@ -684,8 +692,8 @@ input[type=button] {
      /* -------------------- Tablet Styles - FAQ Page -------------------- */
 
      /* FAQ STYLES */
-     .faq .content-wrapper {
-       padding: 95px 0;
+     .faq {
+       padding: 75px 0;
      }
 
      .faq h2 {
