@@ -132,6 +132,7 @@ textarea {
    }
 
    p {
+     font-size: 0.875em;
      line-height: 1.125em;
    }
 
@@ -555,6 +556,18 @@ input[type=button] {
 
    /* -------------------- Tablet Header - Footer Styles -------------------- */
 
+   h1 {
+     font-size: 3em;
+   }
+
+   h2 {
+     font-size: 2.25em;
+   }
+
+   h3 {
+     font-size: 1.5em;
+   }
+
      /* HEADER STYLES */
 
      header .content-wrapper {
@@ -574,6 +587,13 @@ input[type=button] {
        justify-content: flex-end;
      }
 
+     header nav ul {
+       justify-content: flex-end;
+     }
+
+     header nav ul li {
+       margin-left: 40px;
+     }
 
      /* FOOTER STYLES */
      footer .content-wrapper {
@@ -610,11 +630,21 @@ input[type=button] {
 
      aside .content-wrapper {
        flex-flow: row nowrap;
+       align-items: flex-start;
      }
 
      aside .form {
        margin-left: 30px;
      }
+
+     input[type=text] {
+       padding: 10px 15px;
+     }
+
+     input[type=button] {
+       padding: 10px 0;
+     }
+
 
      /* FEATURES STYLES */
      .features {
@@ -718,6 +748,18 @@ input[type=button] {
        max-width: 960px;
      }
 
+     h2 {
+       font-size: 2.25em;
+     }
+
+     h3 {
+       font-size: 1.875em;
+     }
+
+     p {
+       font-size: 1.125em;
+     }
+
      /* -------------------- Desktop Header - Footer Styles -------------------- */
 
      header figure {
@@ -740,6 +782,15 @@ input[type=button] {
 
      /* -------------------- Desktop Homepage Styles -------------------- */
 
+     .hero-area {
+       padding: 10px 0;
+     }
+
+     .hero-area h1 {
+       font-size: 3.75em;
+       width: 70%;
+     }
+
      /* NEWSLETTER SIGNUP STYLES */
 
      aside .content-wrapper {
@@ -758,12 +809,25 @@ input[type=button] {
        margin: 0 5%;
      }
 
-     /* -------------------- Tablet Styles - About Page -------------------- */
+     .reviews article {
+       margin-top: 95px;
+     }
+
+     .reviews figure {
+       padding-right: 20px;
+     }
+
+     /* -------------------- Desktop Styles - About Page -------------------- */
+
+     .mission h2 {
+       font-size: 3em;
+     }
+
      .map figure {
        padding-bottom: 38%;
      }
 
-     /* -------------------- Tablet Styles - FAQ Page -------------------- */
+     /* -------------------- Desktop Styles - FAQ Page -------------------- */
 
      /* FAQ STYLES */
 
@@ -771,6 +835,9 @@ input[type=button] {
        flex-basis: 45%;
      }
 
+     .faq h3 {
+       font-size: 1.125em;
+     }
 
    }
 
