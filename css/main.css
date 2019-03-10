@@ -634,8 +634,13 @@ input[type=button] {
        align-items: flex-start;
      }
 
+     aside .form-description {
+       flex-basis: 50%
+     }
+
      aside .form {
        margin-left: 30px;
+       flex-basis: 50%
      }
 
      input[type=text] {
