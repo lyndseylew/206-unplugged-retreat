@@ -177,7 +177,7 @@ header figure {
 }
 
 header .header-divider {
-  width: 100%;
+  width: 120%;
   border-bottom: rgb(58,58,58) solid 1px;
 }
 
@@ -604,6 +604,7 @@ input[type=button] {
      footer .footer-content {
        width: 83%;
        flex-flow: row nowrap;
+       align-items: flex-start;
      }
 
      footer .contact, footer .social {
@@ -623,7 +624,7 @@ input[type=button] {
      }
 
      .hero-area h1 {
-       width: 60%;
+       width: 600px;
      }
 
      /* NEWSLETTER SIGNUP STYLES */
@@ -788,7 +789,7 @@ input[type=button] {
 
      .hero-area h1 {
        font-size: 3.75em;
-       width: 70%;
+       width: 700px;
      }
 
      /* NEWSLETTER SIGNUP STYLES */
